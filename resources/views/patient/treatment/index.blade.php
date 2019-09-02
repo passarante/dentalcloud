@@ -582,7 +582,8 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($patient->treatments as $treatment)
+
+                            @foreach ($patient->ptreatments as $treatment)
                             <tr>
                                 <td>{{$treatment->treatment_date}}</td>
                                 <td>{{$treatment->treatment_note}}</td>

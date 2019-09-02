@@ -620,6 +620,7 @@
 
                 </div>
                 <div class="card-body">
+
                     @if (count($patient->ptreatments)>0)
                     <table id="patientTreatmentListTable" class="display " style="width:100%;">
                         <thead>
@@ -633,6 +634,7 @@
                             </tr>
                         </thead>
                         <tbody>
+
                             @foreach ($patient->treatments as $treatment)
                             <tr>
                                 <td>{{$treatment->treatment_date}}</td>
