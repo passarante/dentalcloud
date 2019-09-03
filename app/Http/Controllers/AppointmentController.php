@@ -20,7 +20,7 @@ class AppointmentController extends Controller
 
         $event = [];
         foreach ($appointments as $row) {
-            if($row->completed==0){
+            if($row->completed==0 && $row->beg !=null){
                 $row['color']="red";
             }
             $event[] = Calendar::event(

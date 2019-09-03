@@ -12,7 +12,7 @@ class PatientController extends Controller
     public function index()
     {
         $patients = Patient::orderBy('name', 'DESC');
-
+        $patient_groups = PatientGroup::all();
         return view('patient.index', compact('patients', 'patient_groups'));
     }
 
